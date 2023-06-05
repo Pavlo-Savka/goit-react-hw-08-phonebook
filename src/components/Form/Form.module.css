@@ -1,0 +1,24 @@
+.contact-form {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    width: 300px;
+    flex-direction: column;
+    border: 2px solid black;
+}
+.phonebook__label {
+display: flex;
+flex-direction: column;
+
+}
+.phonebook__name {
+font-size: 20px;
+font-weight: 500;
+}
+.phonebook__button {
+cursor: pointer;
+font-size: 20px;
+font-weight: 600;
+background: #1f4037;
+background: linear-gradient(to right, #99f2c8, #1f4037);
+}

@@ -1,0 +1,11 @@
+.contact-item {
+    display: flex;
+    margin: 10px;
+    width: 400px;
+    justify-content:space-between;
+}
+.itemBtn {
+    cursor: pointer;
+    min-width: 100px;
+    height: 20px;
+}
