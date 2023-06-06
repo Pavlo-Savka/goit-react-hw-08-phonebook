@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 
 import { refreshUser } from 'redux/auth/operations';
 
-import { Navigate, Route, Routes } from 'react-router-dom';
+ import { Navigate, Route, Routes } from 'react-router-dom';
 
 import { RestrictedRoute } from './RestrictedRoute';
 import { PrivateRoute } from './PrivateRoute';
@@ -22,7 +22,7 @@ function App() {
   }, [dispatch]);
 
   return (
-    <Routes>
+     <Routes>
       <Route path='/' element={<Layout />} >
         <Route index element={<HomePage />} />
 
@@ -39,7 +39,7 @@ function App() {
           element={<PrivateRoute redirectTo='/login' component={<Contacts />} />} />
       </Route>
       <Route path='*' element={<Navigate to="/" replace />} />
-    </Routes>
+     </Routes>
   );
 }
 export default App;
