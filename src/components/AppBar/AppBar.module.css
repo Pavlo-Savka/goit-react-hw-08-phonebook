@@ -1,0 +1,12 @@
+.header {
+    margin: 0 auto;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    background: #1f4037;
+        background: linear-gradient(to right, #99f2c8, #3bb393);
+    border-radius: 10px;
+    padding: 5px 0;
+}

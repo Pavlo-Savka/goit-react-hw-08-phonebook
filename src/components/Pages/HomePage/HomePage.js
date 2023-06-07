@@ -7,7 +7,8 @@ export const HomePage = () => {
 
     return (
         <div className={css.homepage}>
-            <h1 className={css.header}>Welcome to phonebook manager!</h1>
+            <img src={require('../../../media/logo.png')} alt='logo' className={css.logo} width="150px"></img>
+            <h1 className={css.header}>Phonebook</h1>
             {!name && <h2 className={css.title}>Please register or login.</h2>}
             {name && <h2 className={css.title}>{name}, thank you for using our app!</h2>}
         </div>

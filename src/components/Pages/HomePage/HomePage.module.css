@@ -1,0 +1,26 @@
+.homepage {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 460px;
+    background: #cfe7ee;
+    border-radius: 10px;
+    padding: 20px;
+    background: #1f4037;
+    background: linear-gradient(to right, #99f2c8, #3bb393);
+}
+.logo {
+    align-self: center;
+  
+}
+.header {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+}

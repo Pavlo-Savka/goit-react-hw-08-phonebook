@@ -1,0 +1,21 @@
+.contacts {
+    margin: 0 auto;
+    width: 500px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    text-transform: uppercase;
+    color: #354888;
+    text-align: center;
+}
+
+.title {
+    margin: 5px 0;
+    text-transform: uppercase;
+    color: #354888;
+}
