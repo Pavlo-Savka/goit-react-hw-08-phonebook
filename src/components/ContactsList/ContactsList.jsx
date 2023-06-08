@@ -32,7 +32,7 @@ function ContactsList() {
                   key={i.id}
                   id={i.id}
                   name={i.name}
-                  number={i.phone}
+                number={i.number}
                 />
               ))
             }

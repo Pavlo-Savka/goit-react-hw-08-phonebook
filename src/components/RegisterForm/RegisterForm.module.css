@@ -32,9 +32,9 @@
 }
 
 .button {
-        background: linear-gradient(to right, #7fc8a6, #3bb393);
+    background: linear-gradient(to right, #4a9371, #329379);
     border-radius: 12px;
-    border: 0;
+    border: 1, solid, rgb(105, 169, 140);
     box-sizing: border-box;
     color: #eee;
     cursor: pointer;
@@ -47,7 +47,7 @@
     transition: all 300ms;
 }
 
-.button:hover, 
-:active {
+.button:hover,
+.button:active {
         background: linear-gradient(to right, #99f2c8, #1b5948);
 }
