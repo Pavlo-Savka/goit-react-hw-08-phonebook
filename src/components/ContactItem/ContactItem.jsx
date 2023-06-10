@@ -9,12 +9,12 @@ import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 
 function ContactItem({ name, number, id }) { 
-    console.log(name, number, id);
     const [isLoading, setIsLoading] = useState(false)
     const dispatch = useDispatch();
     const handleDeleteContact = () => {
-        dispatch(deleteContact(id));
         setIsLoading(true);
+        dispatch(deleteContact(id));
+        setIsLoading(false);
         Notify.success('Contact removed.')
     };
         return (

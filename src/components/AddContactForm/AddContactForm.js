@@ -2,23 +2,24 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import { RotatingLines } from 'react-loader-spinner';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
-
 import { selectContacts } from '../../redux/selectors';
 import { addContact } from '../../redux/operations';
 import { selectIsLoadingAdd } from '../../redux/selectors';
-
+import { setIsLoadingAdd } from '../../redux/actions';
 import css from './AddContactForm.module.css';
+
 
 export const AddContactForm = () => {
     const dispatch = useDispatch();
     const contacts = useSelector(selectContacts);
     const isLoadingAdd = useSelector(selectIsLoadingAdd);
-
     const checkingForMatches = (value) => {
         return (
         contacts.some((el) => (el.name.toLowerCase() === value.toLowerCase()))
         )
     };
+
+dispatch(setIsLoadingAdd(false));
 
     const handleSubmitForm = (evt) => {
         evt.preventDefault();
@@ -28,13 +29,12 @@ export const AddContactForm = () => {
         Notify.warning(`${name.value} is already in contacts`)
         return
         };
-
         dispatch(addContact({name: name.value, number: number.value}));
-
         name.value = '';
         number.value = '';
-
+        setIsLoadingAdd(false);
         Notify.success('Contact added.');
+
     };
 
     return <form
